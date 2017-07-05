@@ -1,0 +1,55 @@
+@import "../core/core/mixins";
+@import "../core/core/variables";
+$classname: 'nvb_gptb';
+$resource-path: resource-path($classname);
+.#{$classname} {
+    @media screen and (max-width:649px)
+    {
+        display:none !important;
+
+    }
+    > .nav-container{
+        position:relative;background:#515151;z-index:999;width:100%;
+        .li-list{
+            @media screen and (min-width:$screen-sm-max)
+            {
+                list-style:none;overflow:hidden;width:950px;margin:0 auto;padding: 0;
+                a{
+                    line-height: 60px;text-decoration: none;padding:0 27px;color:white;font-size:16px;outline:none;
+                }
+            }
+
+            @media screen and (min-width:$screen-sm-min) and (max-width:$screen-md-min )
+            {
+                list-style:none;overflow:hidden;width:$screen-sm-min;margin:0 auto;padding: 0;
+                a{
+                    line-height: 60px;text-decoration: none;padding:0 15px;color:white;font-size:16px;outline:none;
+                }
+            }
+            @media screen and (min-width:650px) and (max-width:$screen-xs-max )
+            {
+                list-style:none;overflow:hidden;width:100%;margin:0 auto;padding: 0;
+                a{
+                    line-height: 60px;text-decoration: none;padding:0 7px;color:white;font-size:16px;outline:none;
+                }
+            }
+            li{
+                float:left;
+                &.active{
+                    position:relative;
+                }
+                &.active:before{
+                    content: '';
+                    display: block;
+                    border-bottom: 5px solid red;
+                    position: absolute;
+                    width: 100%;
+                    height: 1px;
+                    bottom: 0;
+                }
+
+            }
+        }
+    }
+
+}
