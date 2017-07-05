@@ -1,0 +1,21 @@
+{
+  "name": "@magaele/nvb_gptb",
+  "version": "1.0.0",
+  "description": "",
+  "main": "css.css",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://git.liontech.com.tw/nvb_gptb.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-sass": "^2.0.0",
+    "susy": "^2.2.12"
+  }
+}
